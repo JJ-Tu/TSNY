@@ -79,5 +79,9 @@
 			});
 
 		}
+	
+	// I started messing with stuff starting from here:	
+	// Daily notice	-- Updates the current date
+		document.querySelector('.major h2').innerHTML = "Classes today<br>" + new Date().toDateString();
 
 })(jQuery);
