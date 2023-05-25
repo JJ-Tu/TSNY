@@ -4069,3 +4069,52 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+
+
+
+/* Specialty Classes Flex Box Testing Zone */
+
+.container-a {
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+	justify-content: space-evenly;
+	background-color: rgb(250, 156, 140);
+}
+
+.container-b {
+	background-color: #FFFFFF;
+	width: 307.55px;
+	height: 191;
+	margin: 10px;
+
+	padding: 0px; /* VERY IMPORTANT MUST HAVE THIS AT 0 */
+
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+	color: #000000;
+}
+
+.special-img {
+	background-color: pink;
+	height: 191px;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	
+}
+.special-txt {
+	background-color: lightgreen;
+}
+.special-txt > p {
+	font-size: 10px;
+}
+/* header and footer and main body colors */
+.specialtyClasses > .major {
+	background: tomato;
+	text-align: center;
+	margin: 0px; /* important */
+	padding: 4%;
+}
