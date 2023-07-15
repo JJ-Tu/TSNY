@@ -4,6 +4,28 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// FareHarbor Integration Code //
+// This is run before the rest of the main.js code because code in this file refers to elements that do not exist on
+// all pages and therefore the code stops before the end on pages other than index.html
+    var p = window.document;
+    fhScript = p.createElement('script');
+    fhScript.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+    p.body.appendChild(fhScript); 
+    fhStyleSheet = p.createElement('link');
+    fhStyleSheet.href = 'https://fh-kit.com/buttons/v2/?red=ed4933&purple=505393';
+    fhStyleSheet.rel = 'stylesheet';
+    fhStyleSheet.type = 'text/css';
+    p.body.appendChild(fhStyleSheet); 
+    fhFixedButton = p.createElement('a');
+    fhFixedButton.href = 'https://fareharbor.com/embeds/book/losangelestrapezeschool/?full-items=yes';
+    fhFixedButton.className = 'fh-button-true-flat-red fh-icon--calendar-check fh-fixed--bottom';
+    fhFixedButton.innerHTML = 'BOOK NOW';
+    fhFixedButton.style = '';
+    fhFixedButton.id = 'fhFixedButton';
+    p.body.appendChild(fhFixedButton);
+
+// End of FareHarbor code //
+
 (function($) {
 
 	var	$window = $(window),
@@ -85,3 +107,6 @@
 		document.querySelector('#dailyNotice').innerHTML = "Classes today <br>" + new Date().toDateString();
 
 })(jQuery);
+
+
+
