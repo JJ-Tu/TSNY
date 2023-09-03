@@ -17,7 +17,7 @@
     fhStyleSheet.type = 'text/css';
     p.body.appendChild(fhStyleSheet); 
     fhFixedButton = p.createElement('a');
-    fhFixedButton.href = 'https://fareharbor.com/embeds/book/losangelestrapezeschool/?full-items=yes';
+    fhFixedButton.href = 'https://fareharbor.com/embeds/book/santamonicatrapezeschool/?full-items=yes';
     fhFixedButton.className = 'fh-button-true-flat-red fh-icon--calendar-check fh-fixed--bottom';
     fhFixedButton.innerHTML = 'BOOK NOW';
     fhFixedButton.style = '';
